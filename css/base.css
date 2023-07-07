@@ -12,3 +12,47 @@ body {
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
 }
+
+/* HEADER-HERO */
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(92, 91, 91, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(../img/hero.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-logo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60rem;
+  height: 60rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  filter: drop-shadow(black 0.3rem 0.3rem 0.3rem);
+}
+
+.hero-slogan {
+  font-size: 3.6rem;
+  color: #d7ba9c;
+  font-weight: 400;
+  letter-spacing: 0.7rem;
+  text-shadow: black 0.3rem 0.3rem 0.3rem;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
