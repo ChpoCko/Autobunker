@@ -14,11 +14,16 @@ body {
 }
 
 .services {
+  /* background-image: url("../img/background.webp"); */
+  background-repeat: repeat-y;
+  margin: 0 auto;
   max-width: 140rem;
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 3.5rem;
   /* align-items: center; */
   justify-items: center;
+  padding: 0 2rem;
 }
 
 .card {
@@ -26,8 +31,8 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 74rem;
-  width: 44rem;
+  height: 70rem;
+  width: 40rem;
 }
 
 .card__side {
@@ -45,18 +50,13 @@ body {
 }
 
 .card__side--front {
-  background-image: url("../img/front/card_1.webp");
-  /* background-size: 100%; */
-  /* background-repeat: no-repeat; */
+  background-size: 100%;
 }
 
 .card__side--back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-
-  background-image: url("../img/back/card_1.webp");
-  /* background-size: contain;
-  background-repeat: no-repeat; */
+  background-size: 100%;
 }
 
 /* .card__side--back-1 {
