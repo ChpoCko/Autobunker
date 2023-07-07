@@ -5,10 +5,72 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
+}
+
+.services {
+  max-width: 140rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* align-items: center; */
+  justify-items: center;
+}
+
+.card {
+  -webkit-perspective: 150rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 74rem;
+  width: 44rem;
+}
+
+.card__side {
+  height: 100%;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.card__side--front {
+  background-image: url("../img/front/card_1.webp");
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
+}
+
+.card__side--back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+
+  background-image: url("../img/back/card_1.webp");
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+}
+
+/* .card__side--back-1 {
+  background-image: url("../img/back/card_1.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.card:hover .card__side--front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
 }
