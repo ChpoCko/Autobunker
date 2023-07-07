@@ -31,8 +31,8 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 70rem;
-  width: 40rem;
+  height: 52.5rem;
+  width: 30rem;
 }
 
 .card__side {
@@ -58,12 +58,6 @@ body {
   transform: rotateY(180deg);
   background-size: 100%;
 }
-
-/* .card__side--back-1 {
-  background-image: url("../img/back/card_1.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
 
 .card:hover .card__side--front {
   -webkit-transform: rotateY(-180deg);
