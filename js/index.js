@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://localhost:3001"; //Change this to the backend url when deployed
+const BACKEND_URL = "https://autobunker.fi/api"; //Change this to the backend url when deployed
 
 const servicesRoute = `${BACKEND_URL}/services`;
 const subServicesRoute = `${BACKEND_URL}/sub-services`;
