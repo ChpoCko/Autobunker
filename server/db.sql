@@ -1,3 +1,8 @@
+DROP TABLE IF EXISTS services CASCADE;
+
+DROP TABLE IF EXISTS sub_services;
+
+
 
 CREATE TABLE services (
   service varchar(200) primary key
