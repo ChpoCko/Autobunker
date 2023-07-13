@@ -6,6 +6,16 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/services", getServices);
-app.get("/sub-services/:service", getSubServices);
+let rootAPIPath;
+switch (process.env.NODE_ENV) {
+  case "development":
+    rootAPIPath = "/api";
+    break;
+  case "production":
+    rootAPIPath = "/";
+    break;
+}
+
+app.get(`${rootAPIPath}services`, getServices);
+app.get(`${rootAPIPath}sub-services/:service`, getSubServices);
 export default app;
