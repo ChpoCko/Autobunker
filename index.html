@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/index.css" />
 
-    <script defer src="./js/index.js"></script>
     <title>Autobunker</title>
   </head>
 
@@ -52,38 +51,208 @@
     </header>
 
     <section class="services" id="services">
-      <template data-card-template>
-        <div class="card" onclick="cardRotate(this)">
-          <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/front/card_1.webp)" -->
-          <div
-            class="card__side card__side--front"
-            card-data-front-image
-            style="background-image: url()"
+      <div class="card" onclick="cardRotate(this)">
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/front/card_1.webp)" -->
+        <div
+          class="card__side card__side--front"
+          card-data-front-image
+          style="background-image: url(./img/front/Rengaspalvelut.webp)"
+        >
+          <span class="service-name" card-data-service-name
+            >Rengaspalvelut</span
           >
-            <span class="service-name" card-data-service-name></span>
-            <div class="card__cta">
-              <div class="btn-flip">
-                <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
-              </div>
-            </div>
-          </div>
-          <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/back/card_1.webp)" -->
-          <div
-            class="card__side card__side--back"
-            card-data-back-image
-            style="background-image: url()"
-          >
-            <ul class="subservices-list" card-data-subservices-list>
-              <!-- HERE ARE JUST LIST ELEMENTS: <li>subservice name</li> -->
-            </ul>
-            <div class="card__cta">
-              <div class="btn-flip">
-                <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
-              </div>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
             </div>
           </div>
         </div>
-      </template>
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/back/card_1.webp)" -->
+        <div
+          class="card__side card__side--back"
+          card-data-back-image
+          style="background-image: url(./img/back/Rengaspalvelut.webp)"
+        >
+          <ul class="subservices-list" card-data-subservices-list>
+            <!-- HERE ARE JUST LIST ELEMENTS: <li>subservice name</li> -->
+            <li>Renkaiden vaihto</li>
+            <li>Vanteiden tasapainotus</li>
+            <li>Renkaiden kausisäilytys</li>
+          </ul>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="cardRotate(this)">
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/front/card_1.webp)" -->
+        <div
+          class="card__side card__side--front"
+          card-data-front-image
+          style="background-image: url(./img/front/Perushuolto.webp)"
+        >
+          <span class="service-name" card-data-service-name>Perushuolto</span>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/back/card_1.webp)" -->
+        <div
+          class="card__side card__side--back"
+          card-data-back-image
+          style="background-image: url(./img/back/Perushuolto.webp)"
+        >
+          <ul class="subservices-list" card-data-subservices-list>
+            <!-- HERE ARE JUST LIST ELEMENTS: <li>subservice name</li> -->
+            <li>Moottoriöljyn vaihto</li>
+            <li>Öljynsuodattimien vaihto</li>
+            <li>Ilmansuodattimien vaihto</li>
+            <li>Jäähdytysnesteen vaihto</li>
+            <li>Sytytyspuolien vaihto</li>
+            <li>Sytytystulppien vaihto</li>
+          </ul>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="cardRotate(this)">
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/front/card_1.webp)" -->
+        <div
+          class="card__side card__side--front"
+          card-data-front-image
+          style="background-image: url(./img/front/Jarrujen\ huolto.webp)"
+        >
+          <span class="service-name" card-data-service-name
+            >Jarrujen huolto</span
+          >
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/back/card_1.webp)" -->
+        <div
+          class="card__side card__side--back"
+          card-data-back-image
+          style="background-image: url(./img/back/Jarrujen\ huolto.webp)"
+        >
+          <ul class="subservices-list" card-data-subservices-list>
+            <!-- HERE ARE JUST LIST ELEMENTS: <li>subservice name</li> -->
+            <li>Jarrupalojen vaihto</li>
+            <li>Jarrulevyjen vaihto</li>
+            <li>Jarrunesteen vaihto</li>
+          </ul>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="cardRotate(this)">
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/front/card_1.webp)" -->
+        <div
+          class="card__side card__side--front"
+          card-data-front-image
+          style="background-image: url(./img/front/Ajovalot.webp)"
+        >
+          <span class="service-name" card-data-service-name>Ajovalot</span>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/back/card_1.webp)" -->
+        <div
+          class="card__side card__side--back"
+          card-data-back-image
+          style="background-image: url(./img/back/Ajovalot.webp)"
+        >
+          <ul class="subservices-list" card-data-subservices-list>
+            <!-- HERE ARE JUST LIST ELEMENTS: <li>subservice name</li> -->
+            <li>Ajovalopolttimoiden vaihto</li>
+            <li>Lisävalon asennus</li>
+          </ul>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="cardRotate(this)">
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/front/card_1.webp)" -->
+        <div
+          class="card__side card__side--front"
+          card-data-front-image
+          style="background-image: url(./img/front/OBD\ Mittaus.webp)"
+        >
+          <span class="service-name" card-data-service-name>OBD Mittaus</span>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/back/card_1.webp)" -->
+        <div
+          class="card__side card__side--back"
+          card-data-back-image
+          style="background-image: url(./img/back/OBD\ Mittaus.webp)"
+        >
+          <ul class="subservices-list" card-data-subservices-list>
+            <!-- HERE ARE JUST LIST ELEMENTS: <li>subservice name</li> -->
+            <li>Vikakoodien Luku</li>
+            <li>Vikakoodien poisto</li>
+          </ul>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="cardRotate(this)">
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/front/card_1.webp)" -->
+        <div
+          class="card__side card__side--front"
+          card-data-front-image
+          style="background-image: url(./img/front/Autopesu.webp)"
+        >
+          <span class="service-name" card-data-service-name>Autopesu</span>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/back/card_1.webp)" -->
+        <div
+          class="card__side card__side--back"
+          card-data-back-image
+          style="background-image: url(./img/back/Autopesu.webp)"
+        >
+          <ul class="subservices-list" card-data-subservices-list>
+            <!-- HERE ARE JUST LIST ELEMENTS: <li>subservice name</li> -->
+            <li>Autopesu ulkoa</li>
+            <li>Autopesu sisältä</li>
+          </ul>
+          <div class="card__cta">
+            <div class="btn-flip">
+              <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="footer">
